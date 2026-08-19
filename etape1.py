@@ -33,6 +33,11 @@ image_url = url.rsplit('/', 2)[0] + '/' + image_url
    
 """
 
+
+
+
+
+
 # Retourner les données sous forme de dictionnaire
 product_data = {
 'product_page_url': product_page_url,
