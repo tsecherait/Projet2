@@ -30,8 +30,10 @@ review_class = soup.find('p', class_='star-rating')['class'][1]
 review_rating = rating_mapping.get(review_class, None)
 image_url=soup.find('article', class_='product_page').find("div").find("img").get("src")
 image_url = url.rsplit('/', 2)[0] + '/' + image_url
-        
-"""# Retourner les données sous forme de dictionnaire
+   
+"""
+
+# Retourner les données sous forme de dictionnaire
 product_data = {
 'product_page_url': product_page_url,
 'universal_product_code': universal_product_code,
